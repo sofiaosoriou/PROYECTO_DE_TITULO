@@ -10,7 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
 </head>
 <body style="background-color:aliceblue;">
-    <div class="container" style="background-color:">
+    <div class="container">
         <form id="form1" runat="server">
         <div>
                  <div class="col-md-12 col-md-offset-3">
@@ -24,7 +24,7 @@
                         <input type="password" class="form-control" id="txtClave" placeholder="Contraseña"/>
                       </div>
                         <div class="col-12">
-                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="btn" BackColor="#0094ff" Width="100%" aling="center" ForeColor="White"/>
+                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="btn" BackColor="#0094ff" Width="100%" ForeColor="White"/>
                         </div>
                  </div>
            </div>

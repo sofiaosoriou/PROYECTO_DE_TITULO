@@ -241,7 +241,7 @@
               </div>
               <div class="col-6" >
                    <!--- al presionar este boton se levanta el pop up --->
-                   <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar Medicamento" CssClass="btn" BackColor="#0094ff" Width="100%" aling="center" ForeColor="White"/>
+                   <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar Medicamento" CssClass="btn" BackColor="#0094ff" Width="100%" ForeColor="White"/>
               </div>
               <div class="col-3">
 
@@ -275,10 +275,57 @@
     <!---panel medicamentos a caducar -->
 
     
-    
+    <br />
  <!-- fin seccion CADUCAR---------------------CADUCAR.....................CADUCAR------>
+ <!-- inicio seccion INGRESO---------------------INGRESO.....................INGRESO------> <!-- inicio seccion INGRESO---------------------INGRESO.....................INGRESO------> <!-- inicio seccion INGRESO---------------------INGRESO.....................INGRESO------>
+    <!---panel  medicamentos  ingreso-->
+    <div id="panelIngreso" class="panel panel-default" style="margin-left:15px; margin-right:15px;" runat="server">
+     <div id="panelIngresohead" class="panel-heading" runat="server">Medicamentos</div>
+      <div id="panelIngresobody" class="panel-body">
+          <div class="row">
+              <div class="col-2">
 
+              </div>
+              <div class="col-4" >
+                   <!--- al presionar este boton se levanta el pop up --->
+                   <asp:Button ID="btnAgrgarMedicamentoExistente" runat="server" Text="Agregar Medicamento Existente" CssClass="btn" BackColor="#0094ff" Width="100%" ForeColor="White"/>
+              </div>
+              <div class="col-4">     
+                  <!--- al presionar este boton se redirige a formulario de nuevo medicamento --->
+                   <asp:Button ID="btnAgrgarMedicamentoNuevo" runat="server" Text="Agregar Medicamento Nuevo" CssClass="btn" BackColor="#0094ff" Width="100%"  ForeColor="White"/>
+             </div>
+              
+              <div class="col-2">
 
-
+              </div>
+           </div>
+          <!-- una vez seleccionado en el pop up el mediccamento que se desea caducar se carga en el grid view a continuación -->
+          <label id="Label2" runat="server" class="col-form-label" for="gvMedicamentosCaducar">Medicamentos a caducar </label>
+           <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" style="table-layout:fixed" CssClass="table">
+                    <AlternatingRowStyle BackColor="White" />
+                    <EditRowStyle BackColor="#2461BF" />
+                    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#0094ff" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EFF3FB" />
+                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                    <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                    <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                    <SortedDescendingHeaderStyle BackColor="#4870BE" />
+              </asp:GridView>    
+                         <!---en la ultima columna del grid hay que agregar un input para indicar la cantidad de medicamento ingresado --->
+      </div>
+       </div>
+       <div class="row">
+            <div class="col-6">
+            <asp:Button ID="btnIngresarMedicamentos" runat="server" Width="95%" Text="Ingresar Medicamentos" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-left:15px; float:left;" ForeColor="White" />
+            </div>
+            <div class="col-6">
+                <asp:Button ID="btnCancelarIngresarmedicamentos" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-right:15px; float:right;" ForeColor="White" />
+            </div>
+     </div>
+ <!-- fin seccion INGRESO---------------------INGRESO.....................INGRESO------><!-- fin seccion INGRESO---------------------INGRESO.....................INGRESO------><!-- fin seccion INGRESO---------------------INGRESO.....................INGRESO------>
+    </div>
 </asp:Content>
 
