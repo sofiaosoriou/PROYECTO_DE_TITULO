@@ -1,0 +1,15 @@
+C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\DUOC UC\PORTAFOLIO DE TÍTULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll
+E:\DUOC UC\PORTAFOLIO DE TÍTULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\DUOC UC\PORTAFOLIO DE TÍTULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+E:\DUOC UC\PORTAFOLIO DE TÍTULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.dll
+E:\DUOC UC\PORTAFOLIO DE TÍTULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll
+E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.dll
+E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb
