@@ -4,7 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CapaWeb", "http://localhost:11658", "{F0C7EE06-8674-4452-A1C6-73CA4BB5A3C4}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_11658"
 		Debug.AspNetCompiler.PhysicalPath = "CapaWeb\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11658\"

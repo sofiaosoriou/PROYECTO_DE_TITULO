@@ -13,3 +13,8 @@ E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.pdb
 E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
 E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.dll
 E:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb
+F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll
+F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.pdb
+F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.dll
+F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb

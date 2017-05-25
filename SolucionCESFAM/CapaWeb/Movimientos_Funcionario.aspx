@@ -40,6 +40,9 @@
       <div class="panel-body">
           <br />
           <div class="row">
+              <div class="col-3">
+
+              </div>
               <div class="col-6">
                 <label for="cbOperacion" class="dropdown"> Seleccione operación</label>
                  <asp:DropDownList ID="cbTipoTratamiento" DataTextField="Operacion" runat="server" CssClass="form-control" Height="60%" Width="100%">
@@ -49,6 +52,9 @@
                    <asp:ListItem Value="4" Text="Ingresar"></asp:ListItem>
                 </asp:DropDownList>  
                </div>
+              <div class="col-3">
+
+              </div>
           </div>
          <br />
    
@@ -205,16 +211,16 @@
       <div id="panelDetallesCaducarbody" class="panel-body">
           <div class="row">
               <div class="col-6">
-                  <label for="txtMotivo" class="dropdown"> Motivo de caducidad</label>
-                  <input runat="server" class="form-control" id="txtMotivo" placeholder="Motivo caducidad"/>
-              </div>
-              <div class="col-6">
                   <label for="txtCriterio" class="dropdown"> Motivo</label>
                   <asp:DropDownList ID="DropDownList2" runat="server" CssClass="form-control" Width="100%" Height="60%" >
                       <asp:ListItem Value="rutpaciente">Mal Estado</asp:ListItem>
                       <asp:ListItem Value="codreceta">Envase Dañado</asp:ListItem>
                       <asp:ListItem Value="codreceta">Otro</asp:ListItem>
                   </asp:DropDownList>
+              </div>
+              <div class="col-6" id="divMotivocaducidad" runat="server">
+                  <label for="txtMotivo" class="dropdown"> Motivo de caducidad</label>
+                  <input runat="server" class="form-control" id="txtMotivo" placeholder="Motivo caducidad"/>
               </div>
              </div>
              <div class="row"> <!--row -->
@@ -234,13 +240,29 @@
 
               </div>
               <div class="col-6" >
-                  <asp:Button ID="btnAgregarMedicamentoCaducar" runat="server" Text="Agregar Medicamento" CssClass="btn" ackColor="#0094ff" ForeColor="White" Width="100%" />
+                   <!--- al presionar este boton se levanta el pop up --->
+                   <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar Medicamento" CssClass="btn" BackColor="#0094ff" Width="100%" aling="center" ForeColor="White"/>
               </div>
               <div class="col-3">
 
               </div>
            </div>
-          </div>
+          <!-- una vez seleccionado en el pop up el mediccamento que se desea caducar se carga en el grid view a continuación -->
+          <label id="lblCaducar" runat="server" class="col-form-label" for="gvMedicamentosCaducar">Medicamentos a caducar </label>
+           <asp:GridView ID="gvMedicamentosCaducar" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" style="table-layout:fixed" CssClass="table">
+                    <AlternatingRowStyle BackColor="White" />
+                    <EditRowStyle BackColor="#2461BF" />
+                    <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#0094ff" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#EFF3FB" />
+                    <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                    <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                    <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                    <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                    <SortedDescendingHeaderStyle BackColor="#4870BE" />
+              </asp:GridView>    
+      </div>
        </div>
        <div class="row">
             <div class="col-6">
