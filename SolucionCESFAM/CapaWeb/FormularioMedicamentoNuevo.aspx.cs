@@ -7,8 +7,15 @@ using System.Web.UI.WebControls;
 
 public partial class FormularioMedicamentoNuevo : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
+    protected void btnIngresarMedicamento_Click(object sender, EventArgs e)
     {
-
+        //hay que hacer que no se pierdan los datos que estaban en la pag. de ingresoa antes de agregar nuevo
+        Response.Redirect("Movimientos_Funcionario.aspx");
+    }
+    protected void btnCancelar_Click(object sender, EventArgs e)
+    {
+        //hay que hacer que no se pierdan los datos que estaban en la pag. de ingresoa antes de agregar nuevo
+        Response.Redirect("Movimientos_Funcionario.aspx"); 
     }
 }
+ 

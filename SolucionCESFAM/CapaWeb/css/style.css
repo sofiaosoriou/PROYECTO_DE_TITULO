@@ -20,7 +20,7 @@
     z-index:1;
     top:0;
     left:0;
-    background-color:#65069f;
+    background-color:#9ec4cb;
     overflow-x:hidden;
     transition:0.5s;
     padding-top:60px;
@@ -51,4 +51,28 @@
         font-size:18px;
     }
 
+}
+
+.fondo2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed
+}
+
+.popup6 {
+    width: 720px;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: gray;
+    padding: 5px 1px 10px 10px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute
 }

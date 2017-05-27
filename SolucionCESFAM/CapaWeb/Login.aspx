@@ -6,8 +6,14 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-
+    <link href="css/style.css" rel="stylesheet" />
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body style="background-color:aliceblue;">
     <div class="container">
@@ -24,12 +30,19 @@
                         <input type="password" class="form-control" id="txtClave" placeholder="Contraseña"/>
                       </div>
                         <div class="col-12">
-                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="btn" BackColor="#0094ff" Width="100%" ForeColor="White"/>
+                            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="btn" BackColor="#00AAAD" Width="100%" ForeColor="White" OnClick="btnIngresar_Click" />
                         </div>
                  </div>
            </div>
         </div>
+            
         </form>
+
+ <!--- <div id="popupContrasenaIncorrecta" class="alert alert-danger alert-dismissable fade in" runat="server">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>¡Error!</strong> Su usuario o contraseña es incorrecta.
+  </div>
+        -->
     </div>
 
 </body>

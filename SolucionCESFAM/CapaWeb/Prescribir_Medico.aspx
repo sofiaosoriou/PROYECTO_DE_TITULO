@@ -53,7 +53,7 @@
                   <br /><br />
                   <div class="row">
                       <div class="col-6">
-                          <input type="button" class="btn" value="Prescribir Medicamentos" style="background-color:#0094ff; color:white;" />
+                          <input type="button" class="btn" value="Prescribir Medicamentos" style="background-color:#00AAAD; color:white;" />
                       </div>
                   </div>
               </div>
@@ -76,7 +76,7 @@
                     <label for="cbTipoTratamiento" class="dropdown"> Fecha Entrega</label>
                     <div class="input-group date" data-provide="datepicker">
                         <input type="text" id="txtDatePicket" class="form-control" runat="server"/>
-                        <div class="input-group-addon" style="background-color:#0094ff;">
+                        <div class="input-group-addon" style="background-color:#00AAAD;">
                             <span class="glyphicon glyphicon-calendar" ></span>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                     </td>
                       <td></td>
                     <td>
-                          <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar" CssClass="btn col-12" BackColor="#0094ff" ForeColor="White" />
+                          <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar" CssClass="btn col-12" BackColor="#00AAAD" ForeColor="White" />
                     </td>
                   </tr>
               </table>
@@ -135,7 +135,7 @@
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#0094ff" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#00AAAD" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                 <RowStyle BackColor="#EFF3FB" />
                 <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
@@ -151,10 +151,10 @@
     
         <div class="row">
             <div class="col-6">
-            <asp:Button ID="btnEmitirReceta" runat="server" Width="95%" Text="Emitir Prescripción" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-left:15px; float:left;" ForeColor="White" />
+            <asp:Button ID="btnEmitirReceta" runat="server" Width="95%" Text="Emitir Prescripción" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-left:15px; float:left;" ForeColor="White" />
             </div>
             <div class="col-6">
-                <asp:Button ID="btnCancelar" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-right:15px; float:right;" ForeColor="White" />
+                <asp:Button ID="btnCancelar" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" />
             </div>
         </div>
 </div>

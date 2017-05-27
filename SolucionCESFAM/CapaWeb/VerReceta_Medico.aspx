@@ -53,7 +53,7 @@
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#0094ff" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#00AAAD" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                 <RowStyle BackColor="#EFF3FB" />
                 <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
@@ -71,7 +71,7 @@
             <div class="col-3">
             </div>
             <div class="col-6">
-                <asp:Button ID="btnAceptar" runat="server" Width="100%" Text="Aceptar" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-right:15px; float:right;" ForeColor="White" />
+                <asp:Button ID="btnAceptar" runat="server" Width="100%" Text="Aceptar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" />
             </div>
              <div class="col-3">
             </div>

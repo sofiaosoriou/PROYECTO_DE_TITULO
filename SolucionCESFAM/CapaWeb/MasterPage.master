@@ -15,24 +15,29 @@
 <div class="container">
 
    <form id="form1" runat="server">
-    <span style="font-size:25px;cursor:pointer; color:salmon;" onclick="openNavmenu()" >&#9776; CESFAM <asp:Label style="color:dimgray" ID="lblFuncion" runat="server" Text="xxxxxx"></asp:Label><small><asp:Label style="color:dimgray; float:right;" ID="lblUsuarioConectado" runat="server" Text="usuario conectado"></asp:Label></small></span>
-    <div class="sidenavmenu" id="mySidenavmenu" runat="server" style="font-family:Arial; background-color: aliceblue;">
-        <a href="#" onclick="closeNav();" style="color:dimgray">
-            <img src="css/menu_imagen.JPG" /></a>
-        <a href="Inicio.aspx" id="menuInicio" runat="server" style="color:dimgray">Inicio</a>
-        <a href="Prescribir_Medico.aspx" id="menumedicoPrescribir" runat="server" style="color:dimgray">Prescribir</a>
-        <a href="VerStock_Medico.aspx" id="menumedicoStock" runat="server" style="color:dimgray">Ver Stock</a>
-         <a href="VerStock_Funcionario.aspx" id="menufarmaceuticoStock" runat="server" style="color:dimgray">Ver Stock</a>
-        <a href="#" id="menuFuncionarioPrescripciones" runat="server" style="color:dimgray">Prescripciones</a>
-        <a href="Movimientos_Funcionario.aspx" id="menuMovimientosFuncionario" runat="server" style="color:dimgray">Movimientos</a>
-        <a href="Login.aspx" id="menuSalir" runat="server" style="color:dimgray">Salir</a>
-    </div>
+        
+       <span style="font-size:25px;cursor:pointer; color:salmon;" onclick="openNavmenu()" >&#9776; CESFAM <asp:Label style="color:dimgray" ID="lblFuncion" runat="server" Text="xxxxxx"></asp:Label><small><asp:Label style="color:dimgray; float:right;" ID="lblUsuarioConectado" runat="server" Text="usuario conectado"></asp:Label></small></span>
+        
+       
+       <div class="sidenavmenu" id="mySidenavmenu" runat="server" style="font-family: Arial; background-color: #00AAAD; color:white;">
+           <a href="#" onclick="closeNav();" style="color: dimgray">
+               <img src="css/menu_imagen.JPG" /></a>
+           <a href="Inicio.aspx" id="menuInicio" runat="server" style="color: white">Inicio</a>
+           <a href="Prescribir_Medico.aspx" id="menumedicoPrescribir" runat="server" style="color: white">Prescribir</a>
+           <a href="VerStock_Medico.aspx" id="menumedicoStock" runat="server" style="color: white">Ver Stock</a>
+           <a href="VerStock_Funcionario.aspx" id="menufarmaceuticoStock" runat="server" style="color: white">Ver Stock</a>
+           <a href="#" id="menuFuncionarioPrescripciones" runat="server" style="color: white">Prescripciones</a>
+           <a href="Movimientos_Funcionario.aspx" id="menuMovimientosFuncionario" runat="server" style="color: white">Movimientos</a>
+           <a href="Login.aspx" id="menuSalir" runat="server" style="color: white">Salir</a>
+       </div>
 
         <br />
         <br />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+
+
     </form>
 
     <br /><br />

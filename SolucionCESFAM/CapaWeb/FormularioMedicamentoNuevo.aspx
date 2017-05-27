@@ -163,10 +163,10 @@
 
             </div>
             <div class="col-4">
-            <asp:Button ID="btnIngresarMedicamento" runat="server" Width="95%" Text="Ingresar Medicamento" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-left:15px; float:left;" ForeColor="White" />
+            <asp:Button ID="btnIngresarMedicamento" runat="server" Width="95%" Text="Ingresar Medicamento" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-left:15px; float:left;" ForeColor="White" OnClick="btnIngresarMedicamento_Click"/>
             </div>
             <div class="col-4">
-                <asp:Button ID="btnCancelar" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-right:15px; float:right;" ForeColor="White" />
+                <asp:Button ID="btnCancelar" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" OnClick="btnCancelar_Click"/>
             </div>
              <div class="col-2">
 

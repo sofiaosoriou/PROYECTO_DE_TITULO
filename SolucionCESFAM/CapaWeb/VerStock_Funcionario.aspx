@@ -59,7 +59,7 @@
                 <asp:dropdownlist id="ddlMedicamentos" runat="server" cssclass="form-control" height="60%" width="100%"></asp:dropdownlist>
             </div>
             <div class="col-4">
-                  <asp:Button ID="btnBuscar" runat="server" Width="95%" Text="Buscar" CssClass="btn btn-default btn-block" BackColor="#0094ff"  style="margin-right:15px; float:right;" ForeColor="White" /> 
+                  <asp:Button ID="btnBuscar" runat="server" Width="95%" Text="Buscar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" /> 
             </div>
 
         </div> <!--row-->
@@ -70,7 +70,7 @@
                 <AlternatingRowStyle BackColor="White" />
                 <EditRowStyle BackColor="#2461BF" />
                 <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
-                <HeaderStyle BackColor="#0094ff" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#00AAAD" Font-Bold="True" ForeColor="White" />
                 <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
                 <RowStyle BackColor="#EFF3FB" />
                 <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
@@ -88,7 +88,7 @@
             <div class="col-3">
              </div>
             <div class="col-6">
-                            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn" BackColor="#0094ff" Width="100%" ForeColor="White"/>
+                            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn" BackColor="#00AAAD" Width="100%" ForeColor="White"/>
              </div>
             <div class="col-3">
              </div>
