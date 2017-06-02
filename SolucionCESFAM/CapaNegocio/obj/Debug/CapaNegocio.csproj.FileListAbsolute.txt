@@ -3,3 +3,7 @@ F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\bin\Debug\CapaNegocio.pdb
 F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.dll
 F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.pdb
