@@ -5,34 +5,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <script>
-        $(document).ready(function () {
-            $(".datetimepicker7").datepicker({ format: 'dd/mm/yyyy', autoclose: true, todayBtn: 'linked' })
-        });
-    </script>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bootstrap-grid.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-  
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" src="bootstrap-datepicker.de.js" charset="UTF-8"></script>
-
-    <script type="text/javascript" src="JS/jquery-1.10.2.min.js"></script>
-    <link href="DatePicker/bootstrap-datepicker.css" rel="stylesheet"/>
-	<script src="DatePicker/bootstrap-datepicker.js"></script>
-
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.standalone.css" />
-    <script type="text/javascript" src="Scripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-    
-    <script src="js/bootstrap.js"></script>
-
-  
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
 
 
 <div class="container">
@@ -67,7 +39,7 @@
         <div class="row"> <!--row-->
             <div class="col-6">
                <label for="cbTipoTratamiento" class="dropdown"> Tipo Tratamiento</label>
-               <asp:DropDownList ID="cbTipoTratamiento" runat="server" CssClass="form-control" Height="60%" Width="100%">
+               <asp:DropDownList ID="cbTipoTratamiento" runat="server" CssClass="form-control" Width="100%">
                    <asp:ListItem Value="1" Text="Corto"></asp:ListItem>
                    <asp:ListItem Value="2" Text="Largo"></asp:ListItem>
                 </asp:DropDownList>  
@@ -99,15 +71,15 @@
           <div class="col-12">
               <table class="table-responsive">
                   <tr>
-                    <th style="text-align:center;">Medicamento</th><td> &nbsp;&nbsp;</td>
-                    <th style="text-align:center;">Código</th><td> &nbsp;&nbsp;</td>
-                    <th style="text-align:center;">Duración</th><td>&nbsp;&nbsp;</td>
-                    <th style="text-align:center;">Dosis</th><td> &nbsp;&nbsp;</td>
-                    <th style="text-align:center;">Acción</th><td> &nbsp;&nbsp;</td>
+                    <th class="col-2" style="text-align:center;">Medicamento</th><td> &nbsp;&nbsp;</td>
+                    <th class="col-2" style="text-align:center;">Código</th><td> &nbsp;&nbsp;</td>
+                    <th class="col-3" style="text-align:center;">Duración</th><td>&nbsp;&nbsp;</td>
+                    <th class="col-2" style="text-align:center;">Dosis</th><td> &nbsp;&nbsp;</td>
+                    <th class="col-3" style="text-align:center;">Acción</th><td> &nbsp;&nbsp;</td>
                   </tr>
                   <tr>
                     <td>
-                        <asp:DropDownList ID="ddlMedicamentos" runat="server" CssClass="form-control" Height="60%" width="100%"></asp:DropDownList>
+                        <asp:DropDownList ID="ddlMedicamentos" runat="server" CssClass="form-control"></asp:DropDownList>
                     </td>
                       <td></td>
                     <td>
@@ -123,7 +95,7 @@
                     </td>
                       <td></td>
                     <td>
-                          <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar" CssClass="btn col-12" BackColor="#00AAAD" ForeColor="White" />
+                          <asp:Button ID="btnAgregarMedicamento" runat="server" Text="Agregar" CssClass="btn" BackColor="#00AAAD" ForeColor="White" />
                     </td>
                   </tr>
               </table>

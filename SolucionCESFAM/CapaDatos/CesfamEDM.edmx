@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+      <Schema Namespace="Modelo.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
         <EntityType Name="BAJA">
           <Key>
             <PropertyRef Name="ID_BAJA" />
@@ -540,7 +540,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="ModelStoreContainer">
+        <EntityContainer Name="ModeloStoreContainer">
           <EntitySet Name="BAJA" EntityType="Self.BAJA" Schema="CESFAM" store:Type="Tables" />
           <EntitySet Name="CARNET_FAMILIAR" EntityType="Self.CARNET_FAMILIAR" Schema="CESFAM" store:Type="Tables" />
           <EntitySet Name="COMUNA" EntityType="Self.COMUNA" Schema="CESFAM" store:Type="Tables" />
@@ -675,7 +675,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Model" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <Schema Namespace="Modelo" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
         <EntityType Name="BAJA">
           <Key>
             <PropertyRef Name="ID_BAJA" />
@@ -1401,9 +1401,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="ModeloStoreContainer" CdmEntityContainer="Entities">
           <EntitySetMapping Name="BAJA">
-            <EntityTypeMapping TypeName="Model.BAJA">
+            <EntityTypeMapping TypeName="Modelo.BAJA">
               <MappingFragment StoreEntitySet="BAJA">
                 <ScalarProperty Name="ID_BAJA" ColumnName="ID_BAJA" />
                 <ScalarProperty Name="FECHA_BAJA" ColumnName="FECHA_BAJA" />
@@ -1414,7 +1414,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CARNET_FAMILIAR">
-            <EntityTypeMapping TypeName="Model.CARNET_FAMILIAR">
+            <EntityTypeMapping TypeName="Modelo.CARNET_FAMILIAR">
               <MappingFragment StoreEntitySet="CARNET_FAMILIAR">
                 <ScalarProperty Name="ID_FAMILIAR" ColumnName="ID_FAMILIAR" />
                 <ScalarProperty Name="SECTOR_FAMILIAR" ColumnName="SECTOR_FAMILIAR" />
@@ -1423,7 +1423,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="COMUNA">
-            <EntityTypeMapping TypeName="Model.COMUNA">
+            <EntityTypeMapping TypeName="Modelo.COMUNA">
               <MappingFragment StoreEntitySet="COMUNA">
                 <ScalarProperty Name="ID_COMUNA" ColumnName="ID_COMUNA" />
                 <ScalarProperty Name="NOM_COMUNA" ColumnName="NOM_COMUNA" />
@@ -1431,7 +1431,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_BAJA">
-            <EntityTypeMapping TypeName="Model.DETALLE_BAJA">
+            <EntityTypeMapping TypeName="Modelo.DETALLE_BAJA">
               <MappingFragment StoreEntitySet="DETALLE_BAJA">
                 <ScalarProperty Name="BAJA_ID_BAJA" ColumnName="BAJA_ID_BAJA" />
                 <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
@@ -1440,7 +1440,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_MEDICAMENTO">
-            <EntityTypeMapping TypeName="Model.DETALLE_MEDICAMENTO">
+            <EntityTypeMapping TypeName="Modelo.DETALLE_MEDICAMENTO">
               <MappingFragment StoreEntitySet="DETALLE_MEDICAMENTO">
                 <ScalarProperty Name="RECETA_ID_RECETA" ColumnName="RECETA_ID_RECETA" />
                 <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
@@ -1449,7 +1449,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_PARTIDA">
-            <EntityTypeMapping TypeName="Model.DETALLE_PARTIDA">
+            <EntityTypeMapping TypeName="Modelo.DETALLE_PARTIDA">
               <MappingFragment StoreEntitySet="DETALLE_PARTIDA">
                 <ScalarProperty Name="PARTIDA_ID_PARTIDA" ColumnName="PARTIDA_ID_PARTIDA" />
                 <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
@@ -1458,7 +1458,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DETALLE_RESERVA">
-            <EntityTypeMapping TypeName="Model.DETALLE_RESERVA">
+            <EntityTypeMapping TypeName="Modelo.DETALLE_RESERVA">
               <MappingFragment StoreEntitySet="DETALLE_RESERVA">
                 <ScalarProperty Name="RESERVA_ID_RESERVA" ColumnName="RESERVA_ID_RESERVA" />
                 <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
@@ -1467,7 +1467,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ERRORES">
-            <EntityTypeMapping TypeName="Model.ERRORES">
+            <EntityTypeMapping TypeName="Modelo.ERRORES">
               <MappingFragment StoreEntitySet="ERRORES">
                 <ScalarProperty Name="ID_ERROR" ColumnName="ID_ERROR" />
                 <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
@@ -1476,7 +1476,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ESTADO_RESERVA">
-            <EntityTypeMapping TypeName="Model.ESTADO_RESERVA">
+            <EntityTypeMapping TypeName="Modelo.ESTADO_RESERVA">
               <MappingFragment StoreEntitySet="ESTADO_RESERVA">
                 <ScalarProperty Name="ID_ESTADO" ColumnName="ID_ESTADO" />
                 <ScalarProperty Name="DESCRIPCION_ESTADO" ColumnName="DESCRIPCION_ESTADO" />
@@ -1484,7 +1484,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="FUNCIONARIO">
-            <EntityTypeMapping TypeName="Model.FUNCIONARIO">
+            <EntityTypeMapping TypeName="Modelo.FUNCIONARIO">
               <MappingFragment StoreEntitySet="FUNCIONARIO">
                 <ScalarProperty Name="ID_FUNCIONARIO" ColumnName="ID_FUNCIONARIO" />
                 <ScalarProperty Name="CORREO_FUNCIONARIO" ColumnName="CORREO_FUNCIONARIO" />
@@ -1494,7 +1494,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MEDICAMENTO">
-            <EntityTypeMapping TypeName="Model.MEDICAMENTO">
+            <EntityTypeMapping TypeName="Modelo.MEDICAMENTO">
               <MappingFragment StoreEntitySet="MEDICAMENTO">
                 <ScalarProperty Name="ID_REMEDIO" ColumnName="ID_REMEDIO" />
                 <ScalarProperty Name="NOMBRE_REMEDIO" ColumnName="NOMBRE_REMEDIO" />
@@ -1512,7 +1512,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MEDICO">
-            <EntityTypeMapping TypeName="Model.MEDICO">
+            <EntityTypeMapping TypeName="Modelo.MEDICO">
               <MappingFragment StoreEntitySet="MEDICO">
                 <ScalarProperty Name="ID_MEDICO" ColumnName="ID_MEDICO" />
                 <ScalarProperty Name="ESPECIALIDAD_MEDICO" ColumnName="ESPECIALIDAD_MEDICO" />
@@ -1523,7 +1523,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MENSAJERIA">
-            <EntityTypeMapping TypeName="Model.MENSAJERIA">
+            <EntityTypeMapping TypeName="Modelo.MENSAJERIA">
               <MappingFragment StoreEntitySet="MENSAJERIA">
                 <ScalarProperty Name="ID_MSJ" ColumnName="ID_MSJ" />
                 <ScalarProperty Name="MENSAJE_MSJ" ColumnName="MENSAJE_MSJ" />
@@ -1535,7 +1535,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PACIENTE">
-            <EntityTypeMapping TypeName="Model.PACIENTE">
+            <EntityTypeMapping TypeName="Modelo.PACIENTE">
               <MappingFragment StoreEntitySet="PACIENTE">
                 <ScalarProperty Name="ID_PACIENTE" ColumnName="ID_PACIENTE" />
                 <ScalarProperty Name="EMAIL_PACIENTE" ColumnName="EMAIL_PACIENTE" />
@@ -1545,7 +1545,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PARTIDA">
-            <EntityTypeMapping TypeName="Model.PARTIDA">
+            <EntityTypeMapping TypeName="Modelo.PARTIDA">
               <MappingFragment StoreEntitySet="PARTIDA">
                 <ScalarProperty Name="ID_PARTIDA" ColumnName="ID_PARTIDA" />
                 <ScalarProperty Name="FECHA_PARTIDA" ColumnName="FECHA_PARTIDA" />
@@ -1559,7 +1559,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PERFIL">
-            <EntityTypeMapping TypeName="Model.PERFIL">
+            <EntityTypeMapping TypeName="Modelo.PERFIL">
               <MappingFragment StoreEntitySet="PERFIL">
                 <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
                 <ScalarProperty Name="NOM_PERFIL" ColumnName="NOM_PERFIL" />
@@ -1567,7 +1567,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PERSONA">
-            <EntityTypeMapping TypeName="Model.PERSONA">
+            <EntityTypeMapping TypeName="Modelo.PERSONA">
               <MappingFragment StoreEntitySet="PERSONA">
                 <ScalarProperty Name="RUT_PERSONA" ColumnName="RUT_PERSONA" />
                 <ScalarProperty Name="NOM_PERSONA" ColumnName="NOM_PERSONA" />
@@ -1582,7 +1582,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RECETA">
-            <EntityTypeMapping TypeName="Model.RECETA">
+            <EntityTypeMapping TypeName="Modelo.RECETA">
               <MappingFragment StoreEntitySet="RECETA">
                 <ScalarProperty Name="ID_RECETA" ColumnName="ID_RECETA" />
                 <ScalarProperty Name="FRECUEN_RECETA" ColumnName="FRECUEN_RECETA" />
@@ -1597,7 +1597,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RESERVA">
-            <EntityTypeMapping TypeName="Model.RESERVA">
+            <EntityTypeMapping TypeName="Modelo.RESERVA">
               <MappingFragment StoreEntitySet="RESERVA">
                 <ScalarProperty Name="ID_RESERVA" ColumnName="ID_RESERVA" />
                 <ScalarProperty Name="FECHA_RESERVA" ColumnName="FECHA_RESERVA" />
@@ -1607,7 +1607,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TUTOR">
-            <EntityTypeMapping TypeName="Model.TUTOR">
+            <EntityTypeMapping TypeName="Modelo.TUTOR">
               <MappingFragment StoreEntitySet="TUTOR">
                 <ScalarProperty Name="RUT_TUTOR" ColumnName="RUT_TUTOR" />
                 <ScalarProperty Name="NOM_TUTOR" ColumnName="NOM_TUTOR" />
@@ -1620,7 +1620,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="USUARIO">
-            <EntityTypeMapping TypeName="Model.USUARIO">
+            <EntityTypeMapping TypeName="Modelo.USUARIO">
               <MappingFragment StoreEntitySet="USUARIO">
                 <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
                 <ScalarProperty Name="NOM_USUARIO" ColumnName="NOM_USUARIO" />

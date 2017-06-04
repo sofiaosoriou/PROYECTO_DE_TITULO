@@ -3,35 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <script>
-        $(document).ready(function () {
-            $(".datetimepicker7").datepicker({ format: 'dd/mm/yyyy', autoclose: true, todayBtn: 'linked' })
-        });
-    </script>
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bootstrap-grid.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-  
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" src="bootstrap-datepicker.de.js" charset="UTF-8"></script>
-
-    <script type="text/javascript" src="JS/jquery-1.10.2.min.js"></script>
-    <link href="DatePicker/bootstrap-datepicker.css" rel="stylesheet"/>
-	<script src="DatePicker/bootstrap-datepicker.js"></script>
-
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.standalone.css" />
-    <script type="text/javascript" src="Scripts/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
     
-    <script src="js/bootstrap.js"></script>
-
-  
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
-
 
 <div class="container">
     <!-- inicio panel MOVIMIENTOS ----este panel es fijo---------------------------------------->
@@ -45,7 +17,7 @@
               </div>
               <div class="col-6">
                 <label for="cbOperacion" class="dropdown"> Seleccione operación</label>
-                 <asp:DropDownList ID="cbMovimiento" DataTextField="Operacion" runat="server" CssClass="form-control" Height="60%" Width="100%" OnSelectedIndexChanged="cbMovimiento_SelectedIndexChanged" AutoPostBack="true">
+                 <asp:DropDownList ID="cbMovimiento" DataTextField="Operacion" runat="server" CssClass="form-control" Width="100%" OnSelectedIndexChanged="cbMovimiento_SelectedIndexChanged" AutoPostBack="true">
                    <asp:ListItem Value="0" Text="-- Seleccione --"></asp:ListItem>
                    <asp:ListItem Value="1" Text="Entrega"></asp:ListItem>
                    <asp:ListItem Value="2" Text="Reserva"></asp:ListItem>
@@ -510,5 +482,7 @@
 
 
   </div><!--div de todos los popups--->
+</div>
+
  </asp:Content>
 
