@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace CapaNegocio
 {
@@ -14,7 +15,7 @@ namespace CapaNegocio
         public string PERSONA_RUT_PERSONA { get; set; }
 
 
-        public bool ValidarUsuario(string nombre, string pass)
+        public bool ValidarUsuario( string nombre, string pass)
         {
             try
             {
@@ -26,7 +27,9 @@ namespace CapaNegocio
                 foreach (var q in query)
                 {
                     if (q.PASS_USUARIO == pass)
+                    {
                         return true;
+                    }
                 }
                 return false;
             }

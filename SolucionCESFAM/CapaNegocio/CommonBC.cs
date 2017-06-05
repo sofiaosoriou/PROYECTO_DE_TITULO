@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using CapaDatos;
 
+
 namespace CapaNegocio
 {
     public class CommonBC
     {
 
-        private static CapaDatos.Entities _modeloCesfam;
+        private static Entities _modeloCesfam;
 
         public static CapaDatos.Entities ModeloCesfam
         {

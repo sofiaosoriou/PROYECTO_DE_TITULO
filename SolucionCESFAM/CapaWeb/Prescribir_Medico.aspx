@@ -126,7 +126,7 @@
             <asp:Button ID="btnEmitirReceta" runat="server" Width="95%" Text="Emitir Prescripción" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-left:15px; float:left;" ForeColor="White" />
             </div>
             <div class="col-6">
-                <asp:Button ID="btnCancelar" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" />
+                <asp:Button ID="btnCancelar" runat="server" Width="95%" Text="Cancelar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" OnClick="btnCancelar_Click" />
             </div>
         </div>
 </div>

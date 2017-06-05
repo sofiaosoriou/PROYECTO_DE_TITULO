@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModeloStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="BAJA">
+      <EntityTypeMapping TypeName="Modelo.BAJA">
+        <MappingFragment StoreEntitySet="BAJA">
+          <ScalarProperty Name="ID_BAJA" ColumnName="ID_BAJA" />
+          <ScalarProperty Name="FECHA_BAJA" ColumnName="FECHA_BAJA" />
+          <ScalarProperty Name="MOTIVO_BAJA" ColumnName="MOTIVO_BAJA" />
+          <ScalarProperty Name="OBSERVACIONES_BAJA" ColumnName="OBSERVACIONES_BAJA" />
+          <ScalarProperty Name="ESTADO_BAJA" ColumnName="ESTADO_BAJA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CARNET_FAMILIAR">
+      <EntityTypeMapping TypeName="Modelo.CARNET_FAMILIAR">
+        <MappingFragment StoreEntitySet="CARNET_FAMILIAR">
+          <ScalarProperty Name="ID_FAMILIAR" ColumnName="ID_FAMILIAR" />
+          <ScalarProperty Name="SECTOR_FAMILIAR" ColumnName="SECTOR_FAMILIAR" />
+          <ScalarProperty Name="PACIENTE_ID_PACIENTE" ColumnName="PACIENTE_ID_PACIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMUNA">
+      <EntityTypeMapping TypeName="Modelo.COMUNA">
+        <MappingFragment StoreEntitySet="COMUNA">
+          <ScalarProperty Name="ID_COMUNA" ColumnName="ID_COMUNA" />
+          <ScalarProperty Name="NOM_COMUNA" ColumnName="NOM_COMUNA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_BAJA">
+      <EntityTypeMapping TypeName="Modelo.DETALLE_BAJA">
+        <MappingFragment StoreEntitySet="DETALLE_BAJA">
+          <ScalarProperty Name="BAJA_ID_BAJA" ColumnName="BAJA_ID_BAJA" />
+          <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_MEDICAMENTO">
+      <EntityTypeMapping TypeName="Modelo.DETALLE_MEDICAMENTO">
+        <MappingFragment StoreEntitySet="DETALLE_MEDICAMENTO">
+          <ScalarProperty Name="RECETA_ID_RECETA" ColumnName="RECETA_ID_RECETA" />
+          <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_PARTIDA">
+      <EntityTypeMapping TypeName="Modelo.DETALLE_PARTIDA">
+        <MappingFragment StoreEntitySet="DETALLE_PARTIDA">
+          <ScalarProperty Name="PARTIDA_ID_PARTIDA" ColumnName="PARTIDA_ID_PARTIDA" />
+          <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DETALLE_RESERVA">
+      <EntityTypeMapping TypeName="Modelo.DETALLE_RESERVA">
+        <MappingFragment StoreEntitySet="DETALLE_RESERVA">
+          <ScalarProperty Name="RESERVA_ID_RESERVA" ColumnName="RESERVA_ID_RESERVA" />
+          <ScalarProperty Name="MEDICAMENTO_ID_REMEDIO" ColumnName="MEDICAMENTO_ID_REMEDIO" />
+          <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ERRORES">
+      <EntityTypeMapping TypeName="Modelo.ERRORES">
+        <MappingFragment StoreEntitySet="ERRORES">
+          <ScalarProperty Name="ID_ERROR" ColumnName="ID_ERROR" />
+          <ScalarProperty Name="MENSAJE_ERROR" ColumnName="MENSAJE_ERROR" />
+          <ScalarProperty Name="MENSAJERIA_ID_MSJ" ColumnName="MENSAJERIA_ID_MSJ" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ESTADO_RESERVA">
+      <EntityTypeMapping TypeName="Modelo.ESTADO_RESERVA">
+        <MappingFragment StoreEntitySet="ESTADO_RESERVA">
+          <ScalarProperty Name="ID_ESTADO" ColumnName="ID_ESTADO" />
+          <ScalarProperty Name="DESCRIPCION_ESTADO" ColumnName="DESCRIPCION_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FUNCIONARIO">
+      <EntityTypeMapping TypeName="Modelo.FUNCIONARIO">
+        <MappingFragment StoreEntitySet="FUNCIONARIO">
+          <ScalarProperty Name="ID_FUNCIONARIO" ColumnName="ID_FUNCIONARIO" />
+          <ScalarProperty Name="CORREO_FUNCIONARIO" ColumnName="CORREO_FUNCIONARIO" />
+          <ScalarProperty Name="TEL_FUNCIONARIO" ColumnName="TEL_FUNCIONARIO" />
+          <ScalarProperty Name="PERSONA_RUT_PERSONA" ColumnName="PERSONA_RUT_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICAMENTO">
+      <EntityTypeMapping TypeName="Modelo.MEDICAMENTO">
+        <MappingFragment StoreEntitySet="MEDICAMENTO">
+          <ScalarProperty Name="ID_REMEDIO" ColumnName="ID_REMEDIO" />
+          <ScalarProperty Name="NOMBRE_REMEDIO" ColumnName="NOMBRE_REMEDIO" />
+          <ScalarProperty Name="DESCRIPCION_REMEDIO" ColumnName="DESCRIPCION_REMEDIO" />
+          <ScalarProperty Name="FABRICANTE_REMEDIO" ColumnName="FABRICANTE_REMEDIO" />
+          <ScalarProperty Name="TIPO_REMEDIO" ColumnName="TIPO_REMEDIO" />
+          <ScalarProperty Name="COMPONENTES_REMEDIO" ColumnName="COMPONENTES_REMEDIO" />
+          <ScalarProperty Name="CONTENIDO_REMEDIO" ColumnName="CONTENIDO_REMEDIO" />
+          <ScalarProperty Name="CANTCONTENIDO_REMEDIO" ColumnName="CANTCONTENIDO_REMEDIO" />
+          <ScalarProperty Name="UNIDADMEDIDA_REMEDIO" ColumnName="UNIDADMEDIDA_REMEDIO" />
+          <ScalarProperty Name="GRAMAJE_REMEDIO" ColumnName="GRAMAJE_REMEDIO" />
+          <ScalarProperty Name="STOCKFISICO_REMEDIO" ColumnName="STOCKFISICO_REMEDIO" />
+          <ScalarProperty Name="STOCKDIPONIBLE_REMEDIO" ColumnName="STOCKDIPONIBLE_REMEDIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICO">
+      <EntityTypeMapping TypeName="Modelo.MEDICO">
+        <MappingFragment StoreEntitySet="MEDICO">
+          <ScalarProperty Name="ID_MEDICO" ColumnName="ID_MEDICO" />
+          <ScalarProperty Name="ESPECIALIDAD_MEDICO" ColumnName="ESPECIALIDAD_MEDICO" />
+          <ScalarProperty Name="CORREO_MEDICO" ColumnName="CORREO_MEDICO" />
+          <ScalarProperty Name="TEL_MEDICO" ColumnName="TEL_MEDICO" />
+          <ScalarProperty Name="PERSONA_RUT_PERSONA" ColumnName="PERSONA_RUT_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MENSAJERIA">
+      <EntityTypeMapping TypeName="Modelo.MENSAJERIA">
+        <MappingFragment StoreEntitySet="MENSAJERIA">
+          <ScalarProperty Name="ID_MSJ" ColumnName="ID_MSJ" />
+          <ScalarProperty Name="MENSAJE_MSJ" ColumnName="MENSAJE_MSJ" />
+          <ScalarProperty Name="FECHA_MSJ" ColumnName="FECHA_MSJ" />
+          <ScalarProperty Name="ASUNTO_MSJ" ColumnName="ASUNTO_MSJ" />
+          <ScalarProperty Name="RESERVA_ID_RESERVA" ColumnName="RESERVA_ID_RESERVA" />
+          <ScalarProperty Name="PACIENTE_ID_PACIENTE" ColumnName="PACIENTE_ID_PACIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PACIENTE">
+      <EntityTypeMapping TypeName="Modelo.PACIENTE">
+        <MappingFragment StoreEntitySet="PACIENTE">
+          <ScalarProperty Name="ID_PACIENTE" ColumnName="ID_PACIENTE" />
+          <ScalarProperty Name="EMAIL_PACIENTE" ColumnName="EMAIL_PACIENTE" />
+          <ScalarProperty Name="TEL_PACIENTE" ColumnName="TEL_PACIENTE" />
+          <ScalarProperty Name="PERSONA_RUT_PERSONA" ColumnName="PERSONA_RUT_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARTIDA">
+      <EntityTypeMapping TypeName="Modelo.PARTIDA">
+        <MappingFragment StoreEntitySet="PARTIDA">
+          <ScalarProperty Name="ID_PARTIDA" ColumnName="ID_PARTIDA" />
+          <ScalarProperty Name="FECHA_PARTIDA" ColumnName="FECHA_PARTIDA" />
+          <ScalarProperty Name="TIPO_PARTIDA" ColumnName="TIPO_PARTIDA" />
+          <ScalarProperty Name="ESTADO_PARTIDA" ColumnName="ESTADO_PARTIDA" />
+          <ScalarProperty Name="FUNCIONARIO_ID_FUNCIONARIO" ColumnName="FUNCIONARIO_ID_FUNCIONARIO" />
+          <ScalarProperty Name="PACIENTE_ID_PACIENTE" ColumnName="PACIENTE_ID_PACIENTE" />
+          <ScalarProperty Name="RESERVA_ID_RESERVA" ColumnName="RESERVA_ID_RESERVA" />
+          <ScalarProperty Name="BAJA_ID_BAJA" ColumnName="BAJA_ID_BAJA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERFIL">
+      <EntityTypeMapping TypeName="Modelo.PERFIL">
+        <MappingFragment StoreEntitySet="PERFIL">
+          <ScalarProperty Name="ID_PERFIL" ColumnName="ID_PERFIL" />
+          <ScalarProperty Name="NOM_PERFIL" ColumnName="NOM_PERFIL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PERSONA">
+      <EntityTypeMapping TypeName="Modelo.PERSONA">
+        <MappingFragment StoreEntitySet="PERSONA">
+          <ScalarProperty Name="RUT_PERSONA" ColumnName="RUT_PERSONA" />
+          <ScalarProperty Name="NOM_PERSONA" ColumnName="NOM_PERSONA" />
+          <ScalarProperty Name="APP_PERSONA" ColumnName="APP_PERSONA" />
+          <ScalarProperty Name="APM_PERSONA" ColumnName="APM_PERSONA" />
+          <ScalarProperty Name="FONO_PERSONA" ColumnName="FONO_PERSONA" />
+          <ScalarProperty Name="DIRECCION_PERSONA" ColumnName="DIRECCION_PERSONA" />
+          <ScalarProperty Name="FECNAC_PERSONA" ColumnName="FECNAC_PERSONA" />
+          <ScalarProperty Name="SEXO_PERSONA" ColumnName="SEXO_PERSONA" />
+          <ScalarProperty Name="COMUNA_ID_COMUNA" ColumnName="COMUNA_ID_COMUNA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RECETA">
+      <EntityTypeMapping TypeName="Modelo.RECETA">
+        <MappingFragment StoreEntitySet="RECETA">
+          <ScalarProperty Name="ID_RECETA" ColumnName="ID_RECETA" />
+          <ScalarProperty Name="FRECUEN_RECETA" ColumnName="FRECUEN_RECETA" />
+          <ScalarProperty Name="DURACION_RECETA" ColumnName="DURACION_RECETA" />
+          <ScalarProperty Name="CANTPASTILLAS_RECETA" ColumnName="CANTPASTILLAS_RECETA" />
+          <ScalarProperty Name="FECEMISION_RECETA" ColumnName="FECEMISION_RECETA" />
+          <ScalarProperty Name="TIPO_RECETA" ColumnName="TIPO_RECETA" />
+          <ScalarProperty Name="MEDICO_ID_MEDICO" ColumnName="MEDICO_ID_MEDICO" />
+          <ScalarProperty Name="PACIENTE_ID_PACIENTE" ColumnName="PACIENTE_ID_PACIENTE" />
+          <ScalarProperty Name="INDICACIONES" ColumnName="INDICACIONES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RESERVA">
+      <EntityTypeMapping TypeName="Modelo.RESERVA">
+        <MappingFragment StoreEntitySet="RESERVA">
+          <ScalarProperty Name="ID_RESERVA" ColumnName="ID_RESERVA" />
+          <ScalarProperty Name="FECHA_RESERVA" ColumnName="FECHA_RESERVA" />
+          <ScalarProperty Name="PACIENTE_ID_PACIENTE" ColumnName="PACIENTE_ID_PACIENTE" />
+          <ScalarProperty Name="ESTADO_RESERVA_ID_ESTADO" ColumnName="ESTADO_RESERVA_ID_ESTADO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUTOR">
+      <EntityTypeMapping TypeName="Modelo.TUTOR">
+        <MappingFragment StoreEntitySet="TUTOR">
+          <ScalarProperty Name="RUT_TUTOR" ColumnName="RUT_TUTOR" />
+          <ScalarProperty Name="NOM_TUTOR" ColumnName="NOM_TUTOR" />
+          <ScalarProperty Name="APP_TUTOR" ColumnName="APP_TUTOR" />
+          <ScalarProperty Name="APM_TUTOR" ColumnName="APM_TUTOR" />
+          <ScalarProperty Name="FECNAC_TUTOR" ColumnName="FECNAC_TUTOR" />
+          <ScalarProperty Name="SEXO_TUTOR" ColumnName="SEXO_TUTOR" />
+          <ScalarProperty Name="PACIENTE_ID_PACIENTE" ColumnName="PACIENTE_ID_PACIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="Modelo.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="ID_USUARIO" ColumnName="ID_USUARIO" />
+          <ScalarProperty Name="NOM_USUARIO" ColumnName="NOM_USUARIO" />
+          <ScalarProperty Name="PASS_USUARIO" ColumnName="PASS_USUARIO" />
+          <ScalarProperty Name="PERFIL_ID_PERFIL" ColumnName="PERFIL_ID_PERFIL" />
+          <ScalarProperty Name="PERSONA_RUT_PERSONA" ColumnName="PERSONA_RUT_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

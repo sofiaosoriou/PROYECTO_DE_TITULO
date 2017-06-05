@@ -24,10 +24,10 @@
                 <h4 style="text-align:center;color:dimgray;">LOGIN</h4>
                <div class="form-group" id="formlogin">
                       <div class="form-group">
-                        <input type="text" class="form-control" id="txtUsuario" placeholder="Usuario"/>
+                        <input runat="server" type="text" class="form-control" id="txtUsuario" placeholder="Usuario"/>
                       </div>
                       <div class="form-group">
-                        <input type="password" class="form-control" id="txtClave" placeholder="Contraseña"/>
+                        <input runat="server" type="password" class="form-control" id="txtClave" placeholder="Contraseña"/>
                       </div>
                         <div class="col-12">
                             <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" CssClass="btn" BackColor="#00AAAD" Width="100%" ForeColor="White" OnClick="btnIngresar_Click" />

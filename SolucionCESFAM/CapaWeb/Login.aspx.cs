@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CapaNegocio;
+
 
 public partial class Login : System.Web.UI.Page
 {
@@ -13,7 +15,16 @@ public partial class Login : System.Web.UI.Page
     }
     protected void btnIngresar_Click(object sender, EventArgs e)
     {
-       // popupContrasenaIncorrecta.Visible = true;
+        Usuario user = new Usuario();
+
+        if (user.ValidarUsuario(txtUsuario.Value, txtClave.Value))
+        {
+            Response.Redirect("Inicio.aspx");
+        }
+        else
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
     protected void btnCerrarPopUp_Click(object sender, EventArgs e)
     {

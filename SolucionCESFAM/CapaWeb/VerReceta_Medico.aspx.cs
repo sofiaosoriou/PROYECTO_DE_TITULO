@@ -11,4 +11,8 @@ public partial class VerReceta_Medico : System.Web.UI.Page
     {
 
     }
+    protected void btnAceptar_Click(object sender, EventArgs e)
+    {
+
+    }
 }

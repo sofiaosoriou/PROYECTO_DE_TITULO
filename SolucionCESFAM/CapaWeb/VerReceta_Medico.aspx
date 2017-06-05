@@ -71,7 +71,7 @@
             <div class="col-3">
             </div>
             <div class="col-6">
-                <asp:Button ID="btnAceptar" runat="server" Width="100%" Text="Aceptar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" />
+                <asp:Button ID="btnAceptar" runat="server" Width="100%" Text="Aceptar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" OnClick="btnAceptar_Click" />
             </div>
              <div class="col-3">
             </div>
