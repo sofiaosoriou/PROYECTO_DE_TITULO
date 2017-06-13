@@ -13,6 +13,10 @@ public partial class _Default : System.Web.UI.Page
     }
     protected void btnCancelar_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("/Inicio.aspx");
+    }
+    protected void btnEmitirReceta_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("/VerReceta_Medico.aspx");
     }
 }

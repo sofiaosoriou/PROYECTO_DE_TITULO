@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CapaDatos;
 
 namespace CapaNegocio
 {
@@ -16,10 +17,6 @@ namespace CapaNegocio
         public decimal MEDICO_ID_MEDICO { get; set; }
         public decimal PACIENTE_ID_PACIENTE { get; set; }
         public string INDICACIONES { get; set; }
-
-      //  public virtual ICollection<DETALLE_MEDICAMENTO> DETALLE_MEDICAMENTO { get; set; }
-      //  public virtual MEDICO MEDICO { get; set; }
-      //  public virtual PACIENTE PACIENTE { get; set; }
 
         public Receta()
         {
@@ -68,12 +65,40 @@ namespace CapaNegocio
 
         public bool Modificar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                Receta receta = CommonBC.ModeloCesfam.RECETA.First(re => re.ID_RECETA == this.ID_RECETA);
+                this.ID_RECETA = receta.ID_RECETA;
+                this.FRECUEN_RECETA = receta.FRECUEN_RECETA;
+                this.DURACION_RECETA = receta.DURACION_RECETA;
+                this.CANTPASTILLAS_RECETA = receta.CANTPASTILLAS_RECETA;
+                this.FECEMISION_RECETA = receta.FECEMISION_RECETA;
+                this.TIPO_RECETA = receta.TIPO_RECETA;
+                this.MEDICO_ID_MEDICO = receta.MEDICO_ID_MEDICO;
+                this.PACIENTE_ID_PACIENTE = receta.PACIENTE_ID_PACIENTE;
+                this.INDICACIONES = receta.INDICACIONES;
+
+                CommonBC.ModeloCesfam.RECETA.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public bool Eliminar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                Receta receta = CommonBC.ModeloCesfam.RECETA.First(re => re.ID_RECETA == this.ID_RECETA);
+                CommonBC.ModeloCesfam.RECETA.DeleteObject(receta);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public bool Read()

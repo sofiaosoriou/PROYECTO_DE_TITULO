@@ -20,3 +20,11 @@ F:\PROYECTO_DE_TITULO\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll.config
 C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\bin\Debug\EntityFramework.dll
 C:\Users\sofia\Desktop\SolucionCESFAM\CapaDatos\bin\Debug\EntityFramework.xml
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll.config
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.dll
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\bin\Debug\CapaDatos.pdb
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\bin\Debug\EntityFramework.dll
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\bin\Debug\EntityFramework.xml
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.dll
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaDatos\obj\Debug\CapaDatos.pdb

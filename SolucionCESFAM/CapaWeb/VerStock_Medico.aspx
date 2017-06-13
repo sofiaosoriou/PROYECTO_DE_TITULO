@@ -29,7 +29,7 @@
               <input runat="server" class="form-control" id="txtCodMedicamento" placeholder="Código Medicamento"/>
             </div>
             <div class="col-4">
-                <asp:dropdownlist id="ddlMedicamentos" runat="server" cssclass="form-control" height="60%" width="100%"></asp:dropdownlist>
+                <asp:dropdownlist id="ddlMedicamentos" runat="server" cssclass="form-control"  width="100%"></asp:dropdownlist>
             </div>
             <div class="col-4">
                   <asp:Button ID="btnBuscar" runat="server" Width="95%" Text="Buscar" CssClass="btn btn-default btn-block" BackColor="#00AAAD"  style="margin-right:15px; float:right;" ForeColor="White" /> 

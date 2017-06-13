@@ -53,7 +53,7 @@
                   </asp:DropDownList>
               </div>
               <div class="col-4">
-                  <label for="txtCodNomPrescripcion" class="dropdown" style="color:white;"> label para ocupar espacio en blanco</label>
+                  <label for="txtCodNomPrescripcion" class="dropdown" style="color:aliceblue;">label para ocupar espacio vacío</label>
                   <asp:Button ID="btnBuscarEntrega" runat="server" Text="Buscar" CssClass="btn" BackColor="#00AAAD" ForeColor="White" Width="100%" OnClick="btnBuscarEntrega_Click"/>
               </div>
 

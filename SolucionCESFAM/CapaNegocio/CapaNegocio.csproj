@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,10 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baja.cs" />
+    <Compile Include="CarnetFamiliar.cs" />
     <Compile Include="CommonBC.cs" />
+    <Compile Include="Comuna.cs" />
+    <Compile Include="DetalleBaja.cs" />
+    <Compile Include="DetalleMedicamento.cs" />
+    <Compile Include="DetallePartida.cs" />
+    <Compile Include="DetalleReserva.cs" />
+    <Compile Include="Errores.cs" />
+    <Compile Include="EstadoReserva.cs" />
+    <Compile Include="Funcionario.cs" />
     <Compile Include="IPersistente.cs" />
+    <Compile Include="Medicamento.cs" />
+    <Compile Include="Medico.cs" />
+    <Compile Include="Mensajeria.cs" />
+    <Compile Include="Paciente.cs" />
+    <Compile Include="Partida.cs" />
+    <Compile Include="Perfil.cs" />
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receta.cs" />
+    <Compile Include="Reserva.cs" />
+    <Compile Include="Tutor.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>

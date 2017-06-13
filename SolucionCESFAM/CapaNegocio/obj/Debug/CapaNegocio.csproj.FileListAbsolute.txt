@@ -8,3 +8,4 @@ C:\Users\sofia\Desktop\SolucionCESFAM\CapaNegocio\bin\Debug\CapaNegocio.pdb
 C:\Users\sofia\Desktop\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\sofia\Desktop\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\sofia\Desktop\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.pdb
+G:\5º Semestre\Portafolio De Titulo\2º Entrega\PROYECTO_DE_TITULO-master\PROYECTO_DE_TITULO-master\SolucionCESFAM\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache

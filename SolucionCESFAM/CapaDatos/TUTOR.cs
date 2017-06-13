@@ -20,8 +20,10 @@ namespace CapaDatos
         public string APM_TUTOR { get; set; }
         public System.DateTime FECNAC_TUTOR { get; set; }
         public string SEXO_TUTOR { get; set; }
-        public Nullable<decimal> PACIENTE_ID_PACIENTE { get; set; }
+        public decimal PACIENTE_ID_PACIENTE { get; set; }
     
-        public virtual PACIENTE PACIENTE { get; set; }
+        //public virtual PACIENTE PACIENTE { get; set; }
+
+
     }
 }

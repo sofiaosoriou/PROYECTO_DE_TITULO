@@ -5,7 +5,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CapaWeb", "http://localhost
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		ProjectReferences = "{51d978ae-db50-40eb-8578-4a7bf7658e63}|CapaNegocio.dll;"
+		ProjectReferences = ""
 		Debug.AspNetCompiler.VirtualPath = "/localhost_11658"
 		Debug.AspNetCompiler.PhysicalPath = "CapaWeb\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_11658\"
@@ -26,8 +26,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CapaWeb", "http://localhost
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{E5335BA3-D2C5-481D-9A0C-AF8173FD386B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{51D978AE-DB50-40EB-8578-4A7BF7658E63}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,10 +40,6 @@ Global
 		{E5335BA3-D2C5-481D-9A0C-AF8173FD386B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5335BA3-D2C5-481D-9A0C-AF8173FD386B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5335BA3-D2C5-481D-9A0C-AF8173FD386B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51D978AE-DB50-40EB-8578-4A7BF7658E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51D978AE-DB50-40EB-8578-4A7BF7658E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51D978AE-DB50-40EB-8578-4A7BF7658E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51D978AE-DB50-40EB-8578-4A7BF7658E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
