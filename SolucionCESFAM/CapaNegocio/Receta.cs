@@ -8,6 +8,8 @@ namespace CapaNegocio
 {
     public class Receta:IPersistente
     {
+
+
         public decimal ID_RECETA { get; set; }
         public string FRECUEN_RECETA { get; set; }
         public string DURACION_RECETA { get; set; }
